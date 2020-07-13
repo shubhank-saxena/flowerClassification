@@ -56,7 +56,7 @@ Please follow a systematic Git Workflow -
 
 ## Installation and Setup
 
-## Setup and running of project (Backend)
+### Setup and running of project (Backend)
 
 - Fork the repo and clone it.
 - Go in the repo and setup virtualenvironment using
@@ -79,7 +79,7 @@ pre-commit install
 **This runs the backend server at default port `8000`.
   Open [http://localhost:8000](http://localhost:8000) to view it in the browser.**<br />
 
-## Setup and running of project (Frontend)
+### Setup and running of project (Frontend)
 
 - At your root directory run `yarn install` to install all the dependencies
 - To start react dev server `yarn start`
