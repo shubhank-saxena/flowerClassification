@@ -31,8 +31,6 @@ For list of all the classes, you can refer to [cat_to_name.json file](https://gi
 
 ## Contribution to the project
 
-------------
-
 <div align="center">
 
 [![GitHub issues](https://img.shields.io/github/issues/shubhank-saxena/flowerClassification?logo=github)](https://github.com/shubhank-saxena/flowerClassification/issues) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/shubhank-saxena/flowerClassification?logo=git&logoColor=white)
@@ -46,7 +44,7 @@ Please follow a systematic Git Workflow -
 - **Every change** that you do, it has to be on a branch. Commits on master would directly be closed.
 - Make sure that before you create a new branch for new changes,[syncing with upstream](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork) is neccesary.
 
-## Commits
+### Commits
 
 - Write clear meaningful git commit messages (Do read [this](http://chris.beams.io/posts/git-commit/)).
 - Make sure your PR's description contains GitHub's special keyword references that automatically close the related issue when the PR is merged. (Check [this](https://github.com/blog/1506-closing-issues-via-pull-requests) for more info)
