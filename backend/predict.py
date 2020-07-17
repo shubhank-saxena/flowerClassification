@@ -33,7 +33,7 @@ def arg_parser():
 # Function load_checkpoint(checkpoint_path) loads our saved deep learning model from checkpoint
 def load_checkpoint(checkpoint_path):
     # Load the saved file
-    checkpoint = torch.load("checkpoint.pth")
+    checkpoint = torch.load("checkpoint.pth", map_location=torch.device('cpu'))
 
     # Load Defaults if none specified
     if checkpoint['architecture'] == 'vgg16':
