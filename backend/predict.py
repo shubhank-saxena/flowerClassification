@@ -165,5 +165,5 @@ def main():
     print_probability(top_flowers, top_probs)
 
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
