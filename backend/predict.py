@@ -12,7 +12,7 @@ import os
 
 
 def load_checkpoint(filepath):
-    checkpoint = torch.load(filepath)
+    checkpoint = torch.load(filepath, map_location=torch.device('cpu'))
     model.load_state_dict(checkpoint['state_dict'])
     return model
 
@@ -49,7 +49,7 @@ def predict(image_path, model, topk=5):
     # TODO: Implement the code to predict the class from an image file
 
     # Loading model - using .cpu() for working with CPUs
-    loaded_model = load_checkpoint(model).cpu()
+    loaded_model = load_checkpoint(model)
     # Pre-processing image
     img = process_image(image_path)
     # Converting to torch tensor from Numpy array
