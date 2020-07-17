@@ -36,12 +36,12 @@ def load_checkpoint(checkpoint_path):
     checkpoint = torch.load("checkpoint.pth", map_location=torch.device('cpu'))
 
     # Load Defaults if none specified
-    if checkpoint['architecture'] == 'vgg16':
+    if checkpoint['state_dict'] == 'vgg16':
         model = models.vgg16(pretrained=True)
         model.name = "vgg16"
     else:
-        exec("model = models.{}(pretrained=True)".checkpoint['architecture'])
-        model.name = checkpoint['architecture']
+        exec("model = models.{}(pretrained=True)".checkpoint['state_dict'])
+        model.name = checkpoint['state_dict']
 
     # Freeze parameters so we don't backprop through them
     for param in model.parameters():
