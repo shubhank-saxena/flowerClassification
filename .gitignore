@@ -24,3 +24,9 @@ yarn-error.log*
 
 #model
 checkpoint.pth
+
+#Python cache
+__pycache__/
+
+#VSCode
+.vscode/
