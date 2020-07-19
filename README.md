@@ -7,24 +7,16 @@ I used [Resnet](https://arxiv.org/abs/1512.03385) as my pre-trained model for fe
 
 ```
 (classifier): Sequential(
-    (fc1): Linear(in_features=25088, out_features=4000, bias=True)
+    (fc1): Linear(in_features=9216, out_features=4096, bias=True)
     (relu1): ReLU()
-    (drop1): Dropout(p=0.55)
-    (fc2): Linear(in_features=4000, out_features=2000, bias=True)
+    (dropout1): Dropout(p=0.3, inplace=False)
+    (fc2): Linear(in_features=4096, out_features=2048, bias=True)
     (relu2): ReLU()
-    (drop2): Dropout(p=0.55)
-    (fc3): Linear(in_features=2000, out_features=1000, bias=True)
-    (relu3): ReLU()
-    (drop3): Dropout(p=0.55)
-    (fc4): Linear(in_features=1000, out_features=500, bias=True)
-    (relu4): ReLU()
-    (drop4): Dropout(p=0.55)
-    (fc5): Linear(in_features=500, out_features=102, bias=True)
+    (dropout2): Dropout(p=0.3, inplace=False)
+    (fc3): Linear(in_features=2048, out_features=102, bias=True)
     (output): LogSoftmax()
   )
 ```
-
-As I trained images on the ImageNet dataset where each color channel was normalized separately.So, I normalized the image colors accordingly. For the means, it's [0.485, 0.456, 0.406] and for the standard deviations [0.229, 0.224, 0.225], calculated from the ImageNet images. These values shifted each color channel to be centered at 0 and range from -1 to 1.
 
 For list of all the classes, you can refer to [cat_to_name.json file](https://github.com/shubhank-saxena/flowerClassification/blob/master/backend/cat_to_name.json)
 
