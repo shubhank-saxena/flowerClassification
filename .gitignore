@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 #model
-checkpoint.pth
+project_checkpoint.pth
 
 #Python cache
 __pycache__/
