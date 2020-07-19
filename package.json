@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/shubhank-saxena/flowerClassification.git"
   },
-  "homepage": "https://projects.shubhank.codes/flowerclassification",
+  "homepage": "https://shubhank-saxena.github.io/flowerClassification",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
