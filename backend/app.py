@@ -17,7 +17,7 @@ def predict():
     if request.method == "POST":
         if request.files:
             image = request.files["image"]
-        return os.system("python3 predict.py --checkpoint='./checkpoint.pth' --image='image'")
+        return os.system("python3 predict.py")
 
 
 if __name__ == '__main__':
