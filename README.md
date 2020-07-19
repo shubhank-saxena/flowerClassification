@@ -2,9 +2,7 @@
 <h1>flowerClassification</h1>
 
 [![Build Status](https://travis-ci.org/shubhank-saxena/flowerClassification.svg?branch=master)](https://travis-ci.org/github/shubhank-saxena/flowerClassification) [![GitHub issues](https://img.shields.io/github/issues/shubhank-saxena/flowerClassification?logo=github)](https://github.com/shubhank-saxena/flowerClassification/issues)
-![Size](https://github-size-badge.herokuapp.com/shubhank-saxena/flowerClassification.svg)
-<!-- ![Website](https://img.shields.io/website?down_color=lightgrey&down_message=crap%21&up_color=blue&up_message=it%27s%20up&url=https%3A%2F%2Fshubhank.codes) -->
-<a> <img src="https://badgen.net/dependabot/shubhank-saxena/My-Portfolio?icon=dependabot" alt="Dependabot Badge"></a>
+![Size](https://github-size-badge.herokuapp.com/shubhank-saxena/flowerClassification.svg)<a> <img src="https://badgen.net/dependabot/shubhank-saxena/My-Portfolio?icon=dependabot" alt="Dependabot Badge"></a>
 
 [![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/shubhank-saxena/flowerClassification/blob/master/.pre-commit-config.yaml)
 [![License](https://img.shields.io/github/license/shubhank-saxena/flowerClassification)](https://github.com/shubhank-saxena/flowerClassification/blob/master/LICENSE)
