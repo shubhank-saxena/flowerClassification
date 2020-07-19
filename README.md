@@ -1,9 +1,9 @@
 <div align="center">
 <h1>flowerClassification</h1>
 </div>
-This project is my introductory project to the world of Deep Learning. I trained an image classifier to recognize different species of flowers. I used ["Maria-Elena Nilsback and Andrew Zisserman's dataset of 102 flower categories"](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) for training. The flowers chosen to be flower commonly occuring in the United Kingdom. Each class consists of between 40 and 258 images.<br/>
+This project is my introductory project to the world of Deep Learning. I trained an image classifier to recognize different species of flowers. I used [Maria-Elena Nilsback and Andrew Zisserman's dataset of 102 flower categories](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) for training. The flowers chosen to be flower commonly occuring in the United Kingdom. Each class consists of between 40 and 258 images.<br/>
 
-I used [VGG](https://arxiv.org/abs/1409.1556) as my pre-trained model for feature extraction and the following structure is of the classifier model layers on top of it 
+I used [Resnet](https://arxiv.org/abs/1512.03385) as my pre-trained model for feature extraction and the following structure is of the classifier model layers on top of it 
 
 ```
 (classifier): Sequential(

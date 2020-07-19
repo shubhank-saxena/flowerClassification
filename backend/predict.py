@@ -9,9 +9,7 @@ from PIL import Image
 
 def loading_model(file_path):
     checkpoint = torch.load(file_path)  # loading checkpoint from a file
-    model = models.alexnet(pretrained=True)  # function works solely for Alexnet
-    # you can use the arch from the checkpoint and choose the model architecture in a more generic way:
-    # model = getattr(models, checkpoint['arch']
+    model = models.alexnet(pretrained=True)
 
     model.classifier = checkpoint['classifier']
     model.load_state_dict(checkpoint['state_dict'])
@@ -64,7 +62,6 @@ def process_image(image):
 def predict(image_path, model, topkl):
     ''' Predict the class (or classes) of an image using a trained deep learning model.
     '''
-    # TODO: Implement the code to predict the class from an image file
     image = process_image(image_path)  # loading image and processing it using above defined function
 
     # we cannot pass image to model.forward 'as is' as it is expecting tensor, not numpy array
@@ -96,7 +93,7 @@ def predict(image_path, model, topkl):
 
 def main():
     model = model_verify
-    file_path = 'index.jpeg'  # an example from test set
+    file_path = 'index.jpeg'
 
     img = process_image(file_path)
 
