@@ -87,6 +87,7 @@ This runs the app in the development mode.<br />
 The page will reload if you make edits.<br />
 
 ## To-Do tasks
+- [ ] Complete the frontend part [WIP]
 - [ ] Add Indian Species of flowers
 - [ ] Convert entire application to cross platfrom mobile app
 - [ ] Display information about the predicted flower.
