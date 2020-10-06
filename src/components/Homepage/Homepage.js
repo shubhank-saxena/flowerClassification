@@ -29,7 +29,7 @@ const Homepage = () => {
         <Col>
           <h5>
             It takes image as an input and displays <strong>top 5</strong>{" "}
-            classes with their respective probabilitites.
+            classes with their respective probability.
           </h5>
         </Col>
       </Row>
