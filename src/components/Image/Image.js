@@ -12,7 +12,7 @@ class Image extends React.Component {
   onDrop(picture) {
     this.setState({
       pictures: this.state.pictures.concat(picture),
-      message: "Image Uploaded Successfully",
+      message: "Image Uploaded Successfully"
     });
   }
 

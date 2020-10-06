@@ -25,9 +25,9 @@ model_verify = loading_model('project_checkpoint.pth')
 
 
 def process_image(image):
-    ''' Scales, crops, and normalizes a PIL image for a PyTorch model,
-        returns an Numpy array
-    '''
+    """Scales, crops, and normalizes a PIL image for a PyTorch model,
+    returns an Numpy array
+    """
     # size = 256, 256
     im = Image.open(image)  # loading image
     width, height = im.size  # original size
@@ -60,8 +60,7 @@ def process_image(image):
 
 
 def predict(image_path, model, topkl):
-    ''' Predict the class (or classes) of an image using a trained deep learning model.
-    '''
+    """Predict the class (or classes) of an image using a trained deep learning model."""
     image = process_image(image_path)  # loading image and processing it using above defined function
 
     # we cannot pass image to model.forward 'as is' as it is expecting tensor, not numpy array
