@@ -6,12 +6,14 @@ class Image extends React.Component {
     super(props);
     this.state = { pictures: [] };
     this.onDrop = this.onDrop.bind(this);
+    this.name = "";
     this.message = "No image uploaded";
   }
 
   onDrop(picture) {
     this.setState({
       pictures: this.state.pictures.concat(picture),
+      name: `${picture[0].name}`,
       message: "Image Uploaded Successfully"
     });
   }
@@ -26,6 +28,7 @@ class Image extends React.Component {
           imgExtension={[".jpg", ".gif", ".png", ".gif"]}
           maxFileSize={5242880}
         />
+        <p align="center">{this.state.name}</p>
         <p align="center">{this.state.message}</p>
       </div>
     );
