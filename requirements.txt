@@ -9,7 +9,7 @@ flake8==3.8.3
 Flask==1.1.2
 identify==1.4.23
 ipykernel==5.3.3
-ipython==7.16.1
+ipython==7.16.3
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
 jedi==0.17.2
